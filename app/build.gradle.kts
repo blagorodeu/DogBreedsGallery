@@ -7,6 +7,9 @@ android {
     namespace = "com.example.dogbreedsgallery"
     compileSdk {
         version = release(37)
+        {
+            minorApiLevel = 2
+        }
     }
 
     defaultConfig {
@@ -51,4 +54,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 }
